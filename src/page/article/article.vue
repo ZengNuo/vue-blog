@@ -168,31 +168,50 @@ export default {
       flex-wrap: wrap;
       padding-bottom: 1rem;
       .card {
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%;
+        flex: 0 0 25%;
+        max-width: 25%;
+        @media screen and (max-width: 1600px) {
+          flex: 0 0 33.3333%;
+          max-width: 33.3333%;
+        }
+        @media screen and (max-width: 1200px) {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+        @media screen and (max-width: 900px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
         padding: 0.75rem;
         .card-content {
-          height: 18rem;
+          height: 20rem;
           border: 1px solid #eee;
           background-color: #fff;
-          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,.05);
+          transition: all .25s ease-in-out;
+          &:hover {
+            box-shadow:0 .2rem .6rem rgba(0,0,0,.15);
+          }
           .card-header {
-            height: 20%;
+            padding: 2rem 2rem 0 2rem;
             h3 {
               color: #111;
-              font-size: 20px;
+              font-size: 18px;
+              font-weight: 500;
             }
           }
           .card-body {
-            height: 70%;
-            padding: 1rem 0 1rem 0;
             line-height: 1.5rem;
             @include sc(14px, #888);
+            padding: 2rem;
+            flex: 1 1 auto;
           }
           .card-footer {
             display: flex;
             justify-content: space-between;
-            height: 1.5rem;
+            padding: 0 2rem 2rem 2rem;
             span {
               line-height: 1.5rem;
               font-size: 12px;
@@ -210,7 +229,7 @@ export default {
     }
     .pager {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin: 1rem 0;
       .pager-button {
         background-color: #2687fb;

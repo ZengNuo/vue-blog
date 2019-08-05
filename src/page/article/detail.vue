@@ -85,6 +85,10 @@ export default {
   .wrap {
     background-color: #fff;
     padding: 2.5rem;
+    @media screen and (max-width: 600px) {
+      padding: 1.5rem;
+      text-align: center;
+    }
     .article {
       .title {
         h3 {

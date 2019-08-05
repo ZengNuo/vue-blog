@@ -14,15 +14,7 @@
         </li>
       </ul>
     </div>
-    <div class='sidebar-footer'>
-      <p>
-        <strong>ZengNuo</strong> &copy; 2019 All Rights Reserved.
-      </p>
-      <p>
-        Theme Design by
-        <a href='https://github.com/Showfom/Affinity'>Affinity</a>.
-      </p>
-    </div>
+    <div class='sidebar-footer'></div>
   </div>
 </template>
 
@@ -51,9 +43,14 @@ export default {
   background-color: $bgc;
   color: #777;
   text-align: center;
-  padding: 2rem 1rem 0rem 1rem;
+  padding: 2rem 1rem 6rem 1rem;
+  @media screen and (max-width: 600px) {
+    flex: 0;
+    padding: 1rem;
+  }
   .sidebar-header {
     margin-top: 2rem;
+    width: 100%;
     .head {
       height: 5rem;
       @include borderRadius(2.5rem);
@@ -65,31 +62,21 @@ export default {
     }
   }
   .sidebar-nav {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
     width: 100%;
+    @media screen and (max-width: 600px) {
+      border: 0;
+    }
     li {
       padding: .5rem;
+      @media screen and (max-width: 600px) {
+        display: inline;
+      }
       a {
         font-size: 14px;
         color: #777;
-      }
-    }
-  }
-  .sidebar-footer {
-    position: absolute;
-    bottom: 0rem;
-    color: #aaa;
-    padding: 2rem;
-    p {
-      font-size: 12px;
-      line-height: 20px;
-      a {
-        color: #777;
-        :hover {
-          color: #aaa;
-        }
       }
     }
   }
