@@ -1,9 +1,9 @@
 <template>
   <div id='index'>
     <side-bar></side-bar>
-    <div class='content'>
+    <main class='content'>
       <router-view></router-view>
-    </div>
+    </main>
     <foot-bar></foot-bar>
   </div>
 </template>

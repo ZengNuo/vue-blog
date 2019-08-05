@@ -5,7 +5,7 @@
         <input v-if="isLogin" @click.prevent="createArticle" type='button' class="button_submit" value='新建文章' />
       </div>
       <div class='content-cards'>
-        <div class='card' v-for='(article, index) in articles[currentPage - 1]' :key='index'>
+        <article class='card' v-for='(article, index) in articles[currentPage - 1]' :key='index'>
           <div class='card-content'>
             <div class='card-header'>
               <a href @click.prevent="getDetail(article._id)">
@@ -24,7 +24,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
       <div class='pager'>
         <input v-if="prev" @click.prevent="prevPage" type='button' class="pager-button" value='上一页' />

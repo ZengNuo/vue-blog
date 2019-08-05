@@ -1,5 +1,5 @@
 <template>
-  <div id='sidebar'>
+  <aside id='sidebar'>
     <div class='sidebar-header'>
       <router-link :to="linkTo"><img src='../../assets/images/head_pic.jpeg' alt='head' class='head' /></router-link>
       <p>ZengNuo的博客</p>
@@ -15,7 +15,7 @@
       </ul>
     </div>
     <div class='sidebar-footer'></div>
-  </div>
+  </aside>
 </template>
 
 <script>
