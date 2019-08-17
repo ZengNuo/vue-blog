@@ -12,16 +12,18 @@
 
 <script>
 export default {
-  name: 'footer'
+  name: 'foot'
 }
 </script>
 
 <style lang="scss" type="text/css">
 #footer {
   position: absolute;
-  bottom: 0rem;
+  left: 0;
+  bottom: 0;
   color: #aaa;
-  padding: 2rem;
+  width: 18rem;
+  padding: 2rem 1rem;
   text-align: center;
   @media screen and (max-width: 600px) {
     position: static;

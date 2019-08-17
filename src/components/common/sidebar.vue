@@ -38,12 +38,13 @@ export default {
 #sidebar {
   display: flex;
   flex: 0 0 18rem;
+  width: 18rem;
   flex-direction: column;
   align-items: center;
   background-color: $bgc;
   color: #777;
   text-align: center;
-  padding: 2rem 1rem 6rem 1rem;
+  padding: 2rem 0 6rem 0;
   @media screen and (max-width: 600px) {
     flex: 0;
     padding: 1rem;

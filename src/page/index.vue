@@ -36,6 +36,7 @@ export default {
     padding-right: 0;
   }
   .content {
+    display: block;
     flex: 1 1 auto;
     padding: 2rem 2rem 2rem 0;
     height: 100vh;
