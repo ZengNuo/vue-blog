@@ -46,14 +46,15 @@ export default {
   text-align: center;
   padding: 2rem 0 6rem 0;
   @media screen and (max-width: 600px) {
-    flex: 0;
+    flex: 1 1 auto;
+    width: 100%;
     padding: 1rem;
   }
   .sidebar-header {
     margin-top: 2rem;
     width: 100%;
     .head {
-      height: 5rem;
+      @include wh(5rem, 5rem);
       @include borderRadius(2.5rem);
       border: 2px solid #fff;
     }

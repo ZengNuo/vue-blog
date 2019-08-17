@@ -150,6 +150,7 @@ export default {
         }
         input {
           width: 100%;
+          height: 28px;
           @include font(14px, 28px);
           padding-left: 0.5rem;
           margin-bottom: 1rem;
@@ -164,6 +165,12 @@ export default {
           margin-bottom: 1rem;
           border: 1px solid #ccc;
           @include font(14px, 28px);
+          overflow-y: auto;
+        }
+      }
+      .article-text {
+        .v-note-wrapper .v-note-panel {
+          flex: 1 1 auto;
         }
       }
     }

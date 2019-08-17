@@ -28,6 +28,7 @@ export default {
   @media screen and (max-width: 600px) {
     position: static;
     text-align: center;
+    width: 100%;
   }
   p {
     font-size: 12px;

@@ -145,6 +145,7 @@ export default {
         padding-right: 1rem;
       }
       input {
+        height: 28px;
         @include font(14px, 28px);
         margin-bottom: 1.5rem;
         padding-left: 0.5rem;
@@ -157,6 +158,7 @@ export default {
         padding-left: 0.5rem;
         border: 1px solid #ccc;
         @include font(14px, 28px);
+        overflow-y: auto;
       }
       #button_submit {
         background-color: #2687fb;

@@ -91,6 +91,7 @@ export default {
         input {
           display: block;
           margin: 0 auto;
+          height: 28px;
           @include font(14px, 28px);
           margin-bottom: 1rem;
           padding-left: 0.5rem;

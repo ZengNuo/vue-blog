@@ -102,6 +102,9 @@ export default {
           @include sc(14px, #999);
         }
       }
+      .v-note-wrapper .v-note-panel {
+        flex: 1 1 auto;
+      }
     }
   }
 }
